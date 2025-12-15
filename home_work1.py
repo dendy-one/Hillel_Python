@@ -2,7 +2,7 @@
 
 first_number = int(input("Enter a number: "))
 
-print(int(input("Enter a number: ")) ** 2)
+print(int(first_number ** 2)
 print()
 
 # 2. Середнє трьох чисел
