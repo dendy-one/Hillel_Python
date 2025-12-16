@@ -12,15 +12,11 @@ else:
     match arithmetic_operation:
         case "+":
             print(first_number + second_number)
-
         case "-":
             print(first_number - second_number)
-
         case "*":
             print(first_number * second_number)
-
         case "/":
             print(first_number / second_number)
-
         case _:
             print("Invalid operation entered")
