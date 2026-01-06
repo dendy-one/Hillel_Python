@@ -14,7 +14,7 @@ match arithmetic_operation:
     case "*":
         result = first_number * second_number
     case "/":
-        if first_number != 0:
+        if second_number != 0:
             result = first_number / second_number
         else:
             print("Error: division by zero")
