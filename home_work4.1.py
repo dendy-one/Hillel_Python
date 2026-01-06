@@ -7,5 +7,5 @@ data = [
 
 for lane in data:
     zeros_number = lane.count(0)
-    lane[:] = [num for num in lane if num != 0] + [0] * zeros_number
+    lane[:] = [number for number in lane if number != 0] + [0] * zeros_number
     print(lane)
