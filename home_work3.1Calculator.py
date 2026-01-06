@@ -8,16 +8,19 @@ arithmetic_operation = input("Enter arithmetic operation: ")
 
 match arithmetic_operation:
     case "+":
-        print(first_number + second_number)
+        result = first_number + second_number
     case "-":
-        print(first_number - second_number)
+        result = first_number - second_number
     case "*":
-        print(first_number * second_number)
+        result = first_number * second_number
     case "/":
-        if second_number == 0:  # Перевірку що дільник не дорівнює 0
-
+        if first_number != 0:
+            result = first_number / second_number
+        else:
             print("Error: division by zero")
-
-        print(first_number / second_number)
+            result = None
     case _:
         print("Error: invalid operation")
+        result = None
+
+print("result: ", result)
