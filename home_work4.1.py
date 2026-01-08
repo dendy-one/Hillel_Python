@@ -6,6 +6,7 @@ data = [
 ]
 
 for lane in data:
-    zeros_number = lane.count(0)
-    lane[:] = [number for number in lane if number != 0] + [0] * zeros_number
+    non_zeros = [x for x in lane if x != 0]
+    zeros_count = len(lane) - len(non_zeros)
+    lane[:] = non_zeros + [0] * zeros_count
     print(lane)
