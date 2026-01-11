@@ -1,6 +1,6 @@
 import string
 
-span = input("ведите две букви через дефиз: ")
+span = input("Enter two letters separated by a hyphen: ")
 
 letters = string.ascii_letters
 start = letters.index(span[0])
