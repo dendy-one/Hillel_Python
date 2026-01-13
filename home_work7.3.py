@@ -1,4 +1,14 @@
-def second_index(text, some_str):
+def second_index(text: str, some_str: str) -> int:
+    """
+    Повертає індекс другого входження підрядка у тексті.
+
+    Args:
+        text (str): Рядок, у якому виконується пошук.
+        some_str (str): Підрядок, друге входження якого потрібно знайти.
+
+    Returns:
+        int | None: Індекс другого входження, або None, якщо його немає.
+    """
     index = text.rfind(some_str)
     if not index:
         return None
