@@ -6,10 +6,7 @@ def common_elements() -> set[int]:
     Returns:
         set[int]: Множина спільних елементів.
     """
-    first_list = set(range(0, 101, 3))
-    second_list = set(range(0, 101, 5))
-    intersection_list = first_list.intersection(second_list)
-    return intersection_list
+    return set(range(0, 101, 3)) & set(range(0, 101, 5))
 
 
 assert common_elements() == {0, 75, 45, 15, 90, 60, 30}
