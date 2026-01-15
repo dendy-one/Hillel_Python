@@ -12,6 +12,7 @@ def find_unique_value(some_list: list) -> list:
     Returns:
         any: Значення, яке зустрічається у списку лише один ра"""
     number = [num for num in some_list if some_list.count(num) == 1]
+
     return number[0]
 
 

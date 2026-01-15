@@ -14,6 +14,7 @@ def is_palindrome(text: str) -> bool:
         bool: True, якщо очищений рядок є паліндромом, інакше False.
     """
     text = "".join(char.lower() for char in text if char.isalnum())
+
     return text == text[::-1]
 
 
