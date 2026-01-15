@@ -16,7 +16,6 @@ def add_one(some_list: list) -> list:
     """
     number = int("".join(map(str, some_list))) + 1
     newList = [int(num) for num in str(number)]
-
     return newList
 
 
